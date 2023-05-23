@@ -1,0 +1,48 @@
+import time
+print("\n\n\n\n\n\n\n")
+print("This is Rock Paper Scissors")
+player1score = 0
+player2score = 0
+repeatfunction = "0"
+while repeatfunction == "0":
+    player1 = input("Player 1: Rock, Paper of Scissors? Input 1(rock), 2(paper) or 3(scissors):")
+    print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+    player2 = input("Player 2: Rock, Paper of Scissors? Input 1(rock), 2(paper) or 3(scissors):")
+    time.sleep(2)
+    print("Key: 1 = Rock, 2 = Paper, 3 = Scissors")
+    print("Player 1 Choose {}".format(player1))
+    print("Player 2 Choose {}\n".format(player2))
+    player1check = player1
+    player2check = player2
+    if player1 == player2:
+        print("Tie game")
+    elif player1 == "1" and player2 == "2":
+        print("Player 2 Won!")
+        player2score = player2score + 1
+    elif player1 == "2" and player2 == "1":
+        print("Player 1 Won!")
+        player1score = player1score + 1
+    elif player1 == "2" and player2 == "3":
+        print("Player 2 Won!")
+        player2score = player2score + 1
+    elif player1 == "3" and player2 == "2":
+        print("Player 1 Won!")
+        player1score = player1score + 1
+    elif player1 == "1" and player2 == "3":
+        print("Player 1 Won!")
+        player1score = player1score + 1
+    elif player2 == "1" and player1 == "3":
+        print("Player 2 Won!")
+        player2score = player2score + 1
+    elif player1check != "1" and player1check!="2" and player1check !="3":
+        print("Error! Player 1's input was too large")
+    elif player2check != "1" and player2check!="2" and player2check !="3":
+        print("Error! Player 2's input was too large")
+    else:
+        print("ERROR: FAILED")
+    repeatfunction = input("\nPlay Again? Yes(0) or No(1)\n\n")
+    print("Player 1's score is {}. Player 2's score is {}\n\n".format(player1score,player2score))
+   
+    
+
+    
